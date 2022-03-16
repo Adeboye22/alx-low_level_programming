@@ -1,22 +1,24 @@
-#include "stdio.h"
+# include "main.h"
 
 /**
- * main - prints _putchar
- * description: prints _putchar
- * Return: 0 (Success)
+ *main - print out main car by char.
+ *Description: uses the main header file
+ *that contains the function _putchar
+ *Return: 0.
  */
 
 int main(void)
 {
-	char text [9] = "_putchar";
-	int i = 0;
+char str[] = "_putchar";
+int i;
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(text[i]);
-	}
-	_putchar('\n');
-
-	return (0);
+i = 0;
+while (str[i])
+{
+_putchar(str[i]);
+++i;
 }
+_putchar('\n');
 
+return (0);
+}
